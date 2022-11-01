@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistriActivity2">
+    
+    <TextView
+        android:id="@+id/et_registrasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrasi"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="90dp"/>
+    <TextView
+        android:id="@+id/et_ket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Creat Your New Account"
+        android:layout_centerHorizontal="true"
+        android:textSize="13dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/et_registrasi"/>
+
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_below="@+id/et_ket"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"/>
+    <EditText
+        android:id="@+id/et_kota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kota"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_below="@+id/et_nama"/>
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_below="@+id/et_Date"
+        android:drawableStart="@drawable/ic_baseline_email_24"/>
+    <EditText
+        android:id="@+id/et_Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date or Birth"
+        android:inputType="datetime"
+        android:padding="10dp"
+        android:layout_below="@+id/et_kota"
+        />
+
+    <EditText
+        android:id="@+id/et_pasword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_below="@+id/et_email"
+        android:drawableStart="@drawable/ic_baseline_lock_24"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGNUP"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"/>
+
+</RelativeLayout>
